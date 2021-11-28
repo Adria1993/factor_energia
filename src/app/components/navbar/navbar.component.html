@@ -1,0 +1,16 @@
+<mat-toolbar color="accent">
+    <mat-toolbar-row>
+      <span>{{title}}</span>
+      <span class="example-spacer"></span>
+      <button [routerLink]="['/menu/facturas']" mat-button>
+        Invoices
+      </button>
+      <button [routerLink]="['/menu/clientes']" mat-button>
+        Clients
+      </button>
+      <button mat-icon-button aria-label="Logout button" (click)="LogOut();">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet class="router-outlet"></router-outlet>
